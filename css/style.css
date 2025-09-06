@@ -884,12 +884,23 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .home {
+    flex-direction: column; /* Mengubah dari row ke kolom */
+    align-items: center; /* Memusatkan konten */
+  }
+
   .home .home-info {
+    order: 1; /* Tetap di atas */
     flex: 0 0 100%;
     max-width: 100%;
+    text-align: center; /* Jika mau teks rata tengah */
   }
+
   .home .home-img {
-    display: none;
+    order: 2; /* Gambar berada di bawah */
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px; /* Jarak antara teks/button dan gambar */
   }
   .modal-content {
     max-width: 80%;
@@ -909,6 +920,24 @@ h3.my-profession {
   .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .home {
+    flex-direction: column; /* Mengubah dari row ke kolom */
+    align-items: center; /* Memusatkan konten */
+  }
+
+  .home .home-info {
+    order: 1; /* Tetap di atas */
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center; /* Jika mau teks rata tengah */
+  }
+
+  .home .home-img {
+    order: 2; /* Gambar berada di bawah */
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px; /* Jarak antara teks/button dan gambar */
   }
   .modal-content {
     max-width: 90%;
